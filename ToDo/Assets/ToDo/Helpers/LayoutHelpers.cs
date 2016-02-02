@@ -1,7 +1,8 @@
 ﻿using System;
 
-namespace Utilities.GUI
+namespace Todo.Utils
 {
+#if UNITY_EDITOR
     using UnityEngine;
     public class VerticalBlock : IDisposable
     {
@@ -64,4 +65,6 @@ namespace Utilities.GUI
             GUI.color = Color.white;
         }
     }
+    
+#endif
 }

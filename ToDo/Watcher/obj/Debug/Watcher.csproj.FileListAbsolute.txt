@@ -1,0 +1,17 @@
+D:\Gamedev\UnityAssets\ToDo\Watcher\bin\Debug\Watcher.dll
+D:\Gamedev\UnityAssets\ToDo\Watcher\bin\Debug\Watcher.pdb
+D:\Gamedev\UnityAssets\ToDo\Watcher\bin\Debug\UnityEditor.dll
+D:\Gamedev\UnityAssets\ToDo\Watcher\bin\Debug\UnityEngine.dll
+D:\Gamedev\UnityAssets\ToDo\Watcher\bin\Debug\Mono.Cecil.dll
+D:\Gamedev\UnityAssets\ToDo\Watcher\bin\Debug\Unity.SerializationLogic.dll
+D:\Gamedev\UnityAssets\ToDo\Watcher\bin\Debug\Unity.DataContract.dll
+D:\Gamedev\UnityAssets\ToDo\Watcher\bin\Debug\ICSharpCode.NRefactory.dll
+D:\Gamedev\UnityAssets\ToDo\Watcher\bin\Debug\Unity.UNetWeaver.dll
+D:\Gamedev\UnityAssets\ToDo\Watcher\bin\Debug\Unity.CecilTools.dll
+D:\Gamedev\UnityAssets\ToDo\Watcher\bin\Debug\Mono.Cecil.Pdb.dll
+D:\Gamedev\UnityAssets\ToDo\Watcher\bin\Debug\Mono.Cecil.Mdb.dll
+D:\Gamedev\UnityAssets\ToDo\Watcher\bin\Debug\UnityEditor.xml
+D:\Gamedev\UnityAssets\ToDo\Watcher\bin\Debug\UnityEngine.xml
+D:\Gamedev\UnityAssets\ToDo\Watcher\obj\Debug\Watcher.csprojResolveAssemblyReference.cache
+D:\Gamedev\UnityAssets\ToDo\Watcher\obj\Debug\Watcher.dll
+D:\Gamedev\UnityAssets\ToDo\Watcher\obj\Debug\Watcher.pdb
