@@ -10,6 +10,6 @@ public class Test1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //TODO Implement Update method in c# class
+        //BUG Fix some bugs
 	}
 }

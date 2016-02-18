@@ -5,5 +5,5 @@ function Start () {
 }
 
 function Update () {
-    //TODO Implement Update method in js script
+    //NOTE Runs every frame
 }

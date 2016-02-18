@@ -9,6 +9,8 @@ namespace Todo.Editor
 {
     public class ToDoEditor : EditorWindow
     {
+        private string _dataPath = @"Assets/ToDo/todo.asset";
+
         private FileSystemWatcher _watcher;
         private FileInfo[] _files;
         private TodoData _data;
@@ -64,7 +66,7 @@ namespace Todo.Editor
         {
             RefreshFiles();
 
-            _data = ScriptableObjectUtils.LoadOrCreateAsset<TodoData>(TodoPreferences.DataPath);
+            _data = ScriptableObjectUtils.LoadOrCreateAsset<TodoData>(_dataPath);
             RefreshEntriesToShow();
 
             _watcher = new FileSystemWatcher(Application.dataPath, "*.cs");
