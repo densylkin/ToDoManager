@@ -69,8 +69,6 @@ namespace Todo.Editor
 
             RefreshFiles();
 
-            Debug.Log("Atatat");
-
             _data = ScriptableObjectUtils.LoadOrCreateAsset<TodoData>(_dataPath);
             RefreshEntriesToShow();
 
