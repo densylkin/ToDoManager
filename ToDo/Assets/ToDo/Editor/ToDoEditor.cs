@@ -64,7 +64,12 @@ namespace Todo.Editor
 
         private void OnEnable()
         {
+            if (EditorApplication.isPlayingOrWillChangePlaymode)
+                return;
+
             RefreshFiles();
+
+            Debug.Log("Atatat");
 
             _data = ScriptableObjectUtils.LoadOrCreateAsset<TodoData>(_dataPath);
             RefreshEntriesToShow();
