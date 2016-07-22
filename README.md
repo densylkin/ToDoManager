@@ -1,5 +1,4 @@
 # Unity-ToDo
-Simple tool for managing todo`s in your code
 
 How to use
 ----------
