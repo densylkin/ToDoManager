@@ -1,0 +1,15 @@
+{
+  "name": "com.denis_sylkin.serializabledictionary",
+  "version": "1.0.0",
+  "displayName": "ToDoManager",
+  "description": "A simple tool for managing TODOs in your code.",
+  "unity": "2017.1",
+  "keywords": [
+    "ToDo Manager"
+  ],
+  "author": {
+    "name": "Denis Sylkin",
+    "email": "densylkin@gmail.com",
+    "url": "https://github.com/densylkin/ToDoManager"
+  }
+}
