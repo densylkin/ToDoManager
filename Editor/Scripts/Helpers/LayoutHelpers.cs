@@ -1,70 +1,67 @@
-﻿using System;
-
-namespace Todo.Utils
+﻿namespace Todo.Utils
 {
-#if UNITY_EDITOR
-    using UnityEngine;
-    public class VerticalBlock : IDisposable
-    {
-        public VerticalBlock(params GUILayoutOption[] options)
-        {
-            GUILayout.BeginVertical(options);
-        }
+	using System;
+	using UnityEngine;
 
-        public VerticalBlock(GUIStyle style, params GUILayoutOption[] options)
-        {
-            GUILayout.BeginVertical(style, options);
-        }
+	public class VerticalBlock : IDisposable
+	{
+		public VerticalBlock(params GUILayoutOption[] options)
+		{
+			GUILayout.BeginVertical(options);
+		}
 
-        public void Dispose()
-        {
-            GUILayout.EndVertical();
-        }
-    }
+		public VerticalBlock(GUIStyle style, params GUILayoutOption[] options)
+		{
+			GUILayout.BeginVertical(style, options);
+		}
 
-    public class ScrollviewBlock : IDisposable
-    {
-        public ScrollviewBlock(ref Vector2 scrollPos, params GUILayoutOption[] options)
-        {
-            scrollPos = GUILayout.BeginScrollView(scrollPos, options);
-        }
+		public void Dispose()
+		{
+			GUILayout.EndVertical();
+		}
+	}
 
-        public void Dispose()
-        {
-            GUILayout.EndScrollView();
-        }
-    }
+	public class ScrollviewBlock : IDisposable
+	{
+		public ScrollviewBlock(ref Vector2 scrollPos, params GUILayoutOption[] options)
+		{
+			scrollPos = GUILayout.BeginScrollView(scrollPos, options);
+		}
 
-    public class HorizontalBlock : IDisposable
-    {
-        public HorizontalBlock(params GUILayoutOption[] options)
-        {
-            GUILayout.BeginHorizontal(options);
-        }
+		public void Dispose()
+		{
+			GUILayout.EndScrollView();
+		}
+	}
 
-        public HorizontalBlock(GUIStyle style, params GUILayoutOption[] options)
-        {
-            GUILayout.BeginHorizontal(style, options);
-        }
+	public class HorizontalBlock : IDisposable
+	{
+		public HorizontalBlock(params GUILayoutOption[] options)
+		{
+			GUILayout.BeginHorizontal(options);
+		}
 
-        public void Dispose()
-        {
-            GUILayout.EndHorizontal();
-        }
-    }
+		public HorizontalBlock(GUIStyle style, params GUILayoutOption[] options)
+		{
+			GUILayout.BeginHorizontal(style, options);
+		}
 
-    public class ColoredBlock : System.IDisposable
-    {
-        public ColoredBlock(Color color)
-        {
-            GUI.color = color;
-        }
+		public void Dispose()
+		{
+			GUILayout.EndHorizontal();
+		}
+	}
 
-        public void Dispose()
-        {
-            GUI.color = Color.white;
-        }
-    }
-    
-#endif
+	public class ColoredBlock : System.IDisposable
+	{
+		public ColoredBlock(Color color)
+		{
+			GUI.color = color;
+		}
+
+		public void Dispose()
+		{
+			GUI.color = Color.white;
+		}
+	}
 }

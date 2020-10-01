@@ -1,53 +1,52 @@
-﻿using System;
-using UnityEngine;
-using System.Collections.Generic;
-using System.Linq;
-
-namespace Todo
+﻿namespace Todo
 {
-    [Serializable]
-    public class TodoData : ScriptableObject
-    {
-        public List<TodoEntry> Entries = new List<TodoEntry>();
+	using System;
+	using System.Collections.Generic;
+	using System.Linq;
+	using UnityEngine;
 
-        public List<string> TagsList = new List<string>()
-        {
-            "TODO",
-            "BUG"
-        };
+	[CreateAssetMenu(menuName = "ToDo Manager/NoteList")]
+	[Serializable]
+	public class TodoData : ScriptableObject
+	{
+		public List<TodoEntry> Entries = new List<TodoEntry>();
 
-        public int EntriesCount
-        {
-            get { return Entries.Count; }
-        }
+		public List<string> TagsList = new List<string>() {
+			"TODO",
+			"BUG"
+		};
 
-        public int TagsCount
-        {
-            get { return TagsList.Count; }
-        }
+		public int EntriesCount
+		{
+			get { return Entries.Count; }
+		}
 
-        public int GetCountByTag(int tag)
-        {
-            return tag != -1 ? Entries.Count(e => e.Tag == TagsList[tag]) : EntriesCount;
-        }
+		public int TagsCount
+		{
+			get { return TagsList.Count; }
+		}
 
-        public TodoEntry GetEntryAt(int index)
-        {
-            return Entries[index];
-        }
+		public int GetCountByTag(int tag)
+		{
+			return tag != -1 ? Entries.Count(e => e.Tag == TagsList[tag]) : EntriesCount;
+		}
 
-        public void AddTag(string tag)
-        {
-            if (TagsList.Contains(tag) || string.IsNullOrEmpty(tag))
-                return;
-            TagsList.Add(tag);
-        }
+		public TodoEntry GetEntryAt(int index)
+		{
+			return Entries[index];
+		}
 
-        public void RemoveTag(int index)
-        {
-            if (TagsList.Count >= (index + 1))
-                TagsList.RemoveAt(index);
-        }
-    }
+		public void AddTag(string tag)
+		{
+			if(TagsList.Contains(tag) || string.IsNullOrEmpty(tag))
+				return;
+			TagsList.Add(tag);
+		}
 
+		public void RemoveTag(int index)
+		{
+			if(TagsList.Count >= (index + 1))
+				TagsList.RemoveAt(index);
+		}
+	}
 }
