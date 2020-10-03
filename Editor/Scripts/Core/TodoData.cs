@@ -9,6 +9,7 @@
 	[Serializable]
 	public class TodoData : ScriptableObject
 	{
+		[NonSerialized]
 		public List<TodoEntry> Entries = new List<TodoEntry>();
 
 		public List<string> TagsList = new List<string>() {
