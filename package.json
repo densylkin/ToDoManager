@@ -1,5 +1,5 @@
 {
-  "name": "com.denis_sylkin.serializabledictionary",
+  "name": "com.denis_sylkin.todomanager",
   "version": "1.0.0",
   "displayName": "ToDoManager",
   "description": "A simple tool for managing TODOs in your code.",
